@@ -2,7 +2,48 @@
 
 $poppins: "Poppins", sans-serif;
 
-$purple-color: #7562e0;
-$purple-dark: #120845;
+$main-color: #02bb73;
+$black-pale: #333333;
 $gray-purple: #adaaba;
-$gray-white: #fafbfd;
+$gray-white: #f7f7f7;
+
+$default-border: 1px #f7f7f7 solid;
+
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "small" {
+        @media screen and (max-width: 767px) {
+            @content
+        }
+    }
+
+    @else if $breakpoint == "medium" {
+        @media screen and (max-width: 992px){
+            @content
+        }
+    }
+
+    @else if $breakpoint == "large" {
+        @media screen and (max-width: 1200px){
+            @content
+        }
+    }
+}
+
+@mixin flex-props($flex){
+
+    display: flex;
+
+    @if $flex == "align_vh" {
+        align-items: center;
+        justify-content: center;
+    }
+
+    @else if $flex == "align_v"{
+        align-items: center;
+    }
+
+    @else if $flex == "align_h"{
+        justify-content: center;
+    }
+}
