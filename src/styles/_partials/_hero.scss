@@ -1,130 +1,129 @@
-.portfolio-hero{
-    width: 100vw;
-    height: 730px;
-    background: #f7f7f7;
-    overflow: hidden;
+.portfolio-hero {
+  width: 100vw;
+  height: 730px;
+  background: $gray-white;
+  overflow: hidden;
 
-    & > .wrapper {
-        width: 70%;
-        margin: 0 auto;
-        height: 100%;
-        @include flex-props(align_vh);
+  & > .wrapper {
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
 
-        & > .hire-me-section{
-            flex: 1;
-            h1{
-                font-size: 70px;
-                line-height: 88px;
-                font-weight: 600;
-                color: #333;
-            }
+    max-width: calc(1920px * 0.6);
+    @include flex-props(align_vh);
 
-            h3{
-                line-height: 35px;
-                font-size: 23px;
-                font-weight: 400;
-                margin-bottom: 40px;
-                color: #333;
-            }
+    & > .hire-me-section {
+      flex: 1;
+      h1 {
+        font-size: 70px;
+        line-height: 88px;
+        font-weight: 600;
+        color: #333;
+      }
 
-            .hire-me-button{
-                padding: 20px 70px;
-                font-size: 20px;
-                font-weight: 500;
-                line-height: 60px;
-                color: white;
-                text-decoration: none;
-                border-radius: 5px;
-                border: 2px $main-color solid;
-                background: $main-color;
-                transition: .5s all ease-in-out;
+      h3 {
+        line-height: 35px;
+        font-size: 23px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        color: #333;
+      }
 
-                &:hover{
-                    background: transparent;
-                    color: $main-color;
-                    transition: .5s all ease-in-out;
-                }
-            }
+      .hire-me-button {
+        padding: 20px 70px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 60px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        border: $main-color-border;
+        background: $main-color;
+        transition: 0.5s all ease-in-out;
+
+        &:hover {
+          background: transparent;
+          color: $main-color;
+          transition: 0.5s all ease-in-out;
         }
-
-
-
-        & > .img-section{
-            flex: 1;
-            height: 100%;
-            position: relative;
-            width: 100%;
-            img{
-                position: absolute;
-                height: 90%;
-                right: 0;
-                bottom: 0;
-                z-index: 1;
-            }
-
-            &::after{
-                content: "";
-                opacity: .4;
-                background: $main-color;
-                height: 600px;
-                width: 600px;
-                border-radius: 50%;
-                position: absolute;
-                right:-40px;
-                bottom: -40px;
-            }
-        }
+      }
     }
+
+    & > .img-section {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      width: 100%;
+      img {
+        position: absolute;
+        height: 90%;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+
+      &::after {
+        content: "";
+        opacity: 0.4;
+        background: $main-color;
+        height: 600px;
+        width: 600px;
+        border-radius: 50%;
+        position: absolute;
+        right: -40px;
+        bottom: -40px;
+      }
+    }
+  }
 }
 
-@include respond-to(large){
-    .portfolio-hero{
-        .wrapper{
-            width: 90%;
-        }
+@include respond-to(large) {
+  .portfolio-hero {
+    .wrapper {
+      width: 90%;
     }
+  }
 }
 
-@include respond-to(medium){
-    .portfolio-hero{
-        height: 100vh;
-        padding: 60px 0 0 0;
-        .wrapper{
-            flex-direction: column;
+@include respond-to(medium) {
+  .portfolio-hero {
+    height: 100vh;
+    padding: 60px 0 0 0;
+    .wrapper {
+      flex-direction: column;
 
-            .hire-me-section{
-                text-align: center;
-            }
+      .hire-me-section {
+        text-align: center;
+      }
 
-
-            .img-section{
-                img{
-                    right: 50%;
-                    transform: translateX(50%);
-                    height: 100%;
-                }
-
-                &::after{
-                    right: 50%;
-                    width: 500px;
-                    height: 500px;
-                    transform: translateX(50%);
-                }   
-            }
+      .img-section {
+        img {
+          right: 50%;
+          transform: translateX(50%);
+          height: 100%;
         }
+
+        &::after {
+          right: 50%;
+          width: 500px;
+          height: 500px;
+          transform: translateX(50%);
+        }
+      }
     }
+  }
 }
 
-@include respond-to(small){
-    .portfolio-hero{
-        .wrapper{
-            .img-section{
-                &::after{
-                    width: 400px;
-                    height: 400px;
-                    bottom: -40px;
-                }
-            }
+@include respond-to(small) {
+  .portfolio-hero {
+    .wrapper {
+      .img-section {
+        &::after {
+          width: 400px;
+          height: 400px;
+          bottom: -40px;
         }
+      }
     }
+  }
 }

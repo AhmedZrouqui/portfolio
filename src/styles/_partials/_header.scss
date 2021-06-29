@@ -1,138 +1,142 @@
-.portfolio-header{
-    height:100px;
-    width: 100vw;
-    background: #fff;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+.portfolio-header {
+  height: 100px;
+  width: 100vw;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 
+  transition: 1s all ease-in-out;
 
-    & > .wrapper{
-        display: flex;
-        width: 70%;
-        height: 100%;
-        margin: 0 auto;
+  & > .wrapper {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
 
-        & > .logo-section{
-            flex: 1;
-            @include flex-props(align_v);
-            justify-content: flex-start;
-            & > h1 {
-                color: $main-color;
-            }
-        }
-        & > .nav-section{
-            flex: 5;
-            height: 100%;
-            @include flex-props(align_v);
-            justify-content: flex-end;
-            & > .nav-list{
-                @include flex-props(align_h);
-                list-style: none;
-                overflow: hiden;
-                & > .nav-item{
-                    padding: 0 0 0 45px;
+    max-width: calc(1920px * 0.6);
 
-                    & > .nav-link{
-                        color: #333;
-                        font-size: 14px;
-                        font-weight: 500;
-                        text-decoration: none;
-                        position: relative;
-
-                        &::after{
-                            content: '';
-                            position: absolute;
-                            left: 0;
-                            bottom: -4px;
-                            height: 2px;
-                            width: 0;
-                            background: $main-color;
-                            transition: .4s all ease-in-out;
-                        }
-
-                        &:hover {
-                            &::after{
-                                width: 30px;
-                                transition: .4 all ease-in-out;
-                            }
-                        }
-                    }
-
-
-                }
-            }
-        }
+    & > .logo-section {
+      flex: 1;
+      @include flex-props(align_v);
+      justify-content: flex-start;
+      & > h1 {
+        color: $main-color;
+      }
     }
-}
+    & > .nav-section {
+      flex: 5;
+      height: 100%;
+      @include flex-props(align_v);
+      justify-content: flex-end;
+      & > .nav-list {
+        @include flex-props(align_h);
+        list-style: none;
+        overflow: hiden;
+        & > .nav-item {
+          padding: 0 0 0 45px;
 
-.nav-bar-activate{
-    .ham-menu-button{
-        .icon-bar{
-            &:nth-child(2n){
-                visibility: hidden;
-            }
-
-            &:first-child {
-                transform-origin: 10% 10%;
-                transform: rotate(45deg);
-                background: $main-color;
-            }
-            &:last-child{
-                transform-origin: 10% 90%;
-                transform: rotate(-45deg);
-                background: $main-color;
-            }
-
-        }
-    }
-
-    .nav-list{
-        height: 300px !important;
-        transition : .4s all ease-in-out;
-    }
-}
-
-@include respond-to(medium){
-    .nav-section{
-        height: 0px;
-
-        .ham-menu-button{
-            
-            width: 40px;
+          & > .nav-link {
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
             position: relative;
-            height: 50px;
-            border: none;
-            background: none;
-            cursor: pointer;
 
-            .icon-bar{
-                display: block;
-                background: #a7a7a7;
-                left:0;
-                margin-bottom: 6px;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -4px;
+              height: 2px;
+              width: 0;
+              background: $main-color;
+              transition: 0.4s all ease-in-out;
+            }
+
+            &:hover {
+              &::after {
                 width: 30px;
-                height: 2px;
+                transition: 0.4 all ease-in-out;
+              }
             }
+          }
         }
-
-        .nav-list{
-            position: absolute;
-            top: 100px;
-            height: 0;
-            background: #fff;
-            width: 100vw;
-            text-align: center;
-            left: 50%;
-            transform: translateX(-50%);
-            flex-direction: column;
-            overflow: hidden;
-            transition : .4s all ease-in-out;
-            .nav-item{
-                padding: 20px 0 !important;
-            }
-        }
+      }
     }
+  }
+}
+
+.on-scroll-shadow {
+  box-shadow: 1px 1px 30px rgba(51, 51, 51, 0.3);
+  transition: 1s all ease-in-out;
+}
+
+.nav-bar-activate {
+  .ham-menu-button {
+    .icon-bar {
+      &:nth-child(2n) {
+        visibility: hidden;
+      }
+
+      &:first-child {
+        transform-origin: 10% 10%;
+        transform: rotate(45deg);
+        background: $main-color;
+      }
+      &:last-child {
+        transform-origin: 10% 90%;
+        transform: rotate(-45deg);
+        background: $main-color;
+      }
+    }
+  }
+
+  .nav-list {
+    height: 300px !important;
+    transition: 0.4s all ease-in-out;
+  }
+}
+
+@include respond-to(medium) {
+  .nav-section {
+    height: 0px;
+
+    .ham-menu-button {
+      width: 40px;
+      position: relative;
+      height: 50px;
+      border: none;
+      background: none;
+      cursor: pointer;
+
+      .icon-bar {
+        display: block;
+        background: #a7a7a7;
+        left: 0;
+        margin-bottom: 6px;
+        width: 30px;
+        height: 2px;
+      }
+    }
+
+    .nav-list {
+      position: absolute;
+      top: 100px;
+      height: 0;
+      background: #fff;
+      width: 100vw;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      flex-direction: column;
+      overflow: hidden;
+      transition: 0.4s all ease-in-out;
+      .nav-item {
+        padding: 20px 0 !important;
+      }
+    }
+  }
 }
