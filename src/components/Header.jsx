@@ -7,9 +7,21 @@ function Header() {
 
 
     const [navOpen, setNavOpen] = useState(false)
+    const [boxShadow, setBoxShadow] = useState(false)
+
+    const addNavShadow = () => {
+
+        if(window.scrollY >= 150){
+            setBoxShadow(true)
+        } else {
+            setBoxShadow(false)
+        }
+    }
+
+    window.addEventListener('scroll', addNavShadow)
 
     return (
-        <div className="portfolio-header">
+        <div className={boxShadow ? "portfolio-header on-scroll-shadow" : "portfolio-header"}>
             <div className="wrapper">
                 <div className="logo-section">
                     <h1>AZ.</h1>

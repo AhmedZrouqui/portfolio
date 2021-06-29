@@ -1,0 +1,168 @@
+.portfolio-latestworks {
+  width: 100vw;
+  background: #fff;
+
+  .wrapper {
+    width: 60%;
+    margin: 0 auto;
+    padding: 90px 0;
+
+    max-width: calc(1920px * 0.6);
+
+    @include flex-props(align_vh);
+    flex-direction: column;
+
+    .title-section {
+      @include flex-props(align_v);
+      flex-direction: column;
+      .title {
+        font-size: 45px;
+        display: inline-block;
+        color: #333;
+        z-index: 999;
+        position: relative;
+        line-height: 52px;
+        margin-bottom: 45px;
+        text-align: center;
+
+        &::after {
+          content: "";
+          width: 60%;
+          height: 4px;
+          position: absolute;
+          bottom: 0;
+          bottom: -8px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: $main-color;
+        }
+      }
+
+      .title-information {
+        color: #8a8fa3;
+        text-align: center;
+        max-width: 80%;
+      }
+
+      margin-bottom: 80px;
+    }
+
+    .catalog-section {
+      display: grid;
+      width: 100%;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      grid-template-areas:
+        "work1 work2"
+        "work1 work3"
+        "work4 work5";
+
+      grid-gap: 25px;
+
+      & > .petcare {
+        grid-area: work1;
+      }
+
+      & > .work2 {
+        grid-area: work2;
+        background: #e7e7e7;
+      }
+
+      & > .work3 {
+        grid-area: work3;
+        background: #e7e7e7;
+      }
+
+      & > .work4 {
+        grid-area: work4;
+        background: #e7e7e7;
+      }
+
+      & > .work5 {
+        grid-area: work5;
+        background: #e7e7e7;
+      }
+
+      & > .work {
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        position: relative;
+        padding: 45px;
+        cursor: pointer;
+
+        .hover-content {
+          top: 0;
+          position: absolute;
+          width: 100%;
+          height: 0;
+          overflow: hidden;
+          background: rgba($color: $main-color, $alpha: 0.8);
+          left: 0;
+          border-radius: inherit;
+          display: flex;
+          flex-direction: column;
+          color: white;
+          font-size: 24px;
+          align-items: center;
+          justify-content: center;
+          transition: 0.2s all ease-in-out;
+
+          .hover-title {
+          }
+
+          .description {
+            text-align: center;
+            margin-bottom: 55px;
+          }
+
+          .click-me {
+            font-size: 18px;
+          }
+        }
+
+        &:hover {
+          & > .hover-content {
+            height: 100%;
+            transition: 0.2s all ease-in-out;
+          }
+        }
+
+        .content {
+          width: 100%;
+          height: 100%;
+          @include flex-props(align_vh);
+          h2 {
+            font-weight: 500;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .portfolio-latestworks {
+    .wrapper {
+      width: 80%;
+      padding: 60px 0;
+
+      .catalog-section {
+        padding: 0;
+        grid-template-columns: minmax(100%, 1fr);
+        grid-template-areas:
+          "work1"
+          "work2"
+          "work3"
+          "work4"
+          "work5";
+        .work {
+          min-width: 100%;
+          min-height: 400px;
+        }
+      }
+    }
+  }
+}
