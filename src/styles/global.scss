@@ -7,4 +7,8 @@
     font-family: $poppins;
 }
 
+.App{
+    max-width: 1920px !important;
+}
+
 @import './_partials/exportPartials'

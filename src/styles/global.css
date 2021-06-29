@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.App {
+  max-width: 1920px !important;
+}
+
 .portfolio-header {
   height: 100px;
   width: 100vw;
@@ -24,6 +28,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 70%;
+  max-width: 1920px;
   height: 100%;
   margin: 0 auto;
 }
@@ -184,6 +189,7 @@
   width: 70%;
   margin: 0 auto;
   height: 100%;
+  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,7 +321,7 @@
 }
 
 .portfolio-aboutme .wrapper {
-  width: 60%;
+  width: calc(1920px /0.6);
   height: 100%;
   margin: 0 auto;
   padding: 90px 0;
@@ -479,6 +485,7 @@
   width: 70%;
   margin: 0 auto;
   padding: 90px 0;
+  max-width: 1920px;
 }
 
 .portfolio-services .wrapper .title-section {
