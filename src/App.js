@@ -17,7 +17,7 @@ function App() {
     <HashRouter>
       <div className="App">
         <Header />
-        <Hero id="/" />
+        <Route exact path="/" component={Hero} />
         <AboutMe id="about-me" name="about-me" />
         <Services id="services" name="services" />
         <LatestWorks id="projects" />
