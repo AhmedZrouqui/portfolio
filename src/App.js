@@ -10,11 +10,11 @@ import Proposal from "./components/Proposal";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 
-import { HashRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename={window.location.pathname || ""}>
       <div className="App">
         <Header />
         <Route exact path="/" component={Hero} />
@@ -26,7 +26,7 @@ function App() {
         <ContactMe id="contact" name="contact" />
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
