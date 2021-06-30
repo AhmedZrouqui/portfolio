@@ -10,23 +10,19 @@ import Proposal from "./components/Proposal";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 
-import { BrowserRouter, Route } from "react-router-dom";
-
 function App() {
   return (
-    <BrowserRouter basename={window.location.pathname || ""}>
-      <div className="App">
-        <Header />
-        <Route exact path="/" component={Hero} />
-        <AboutMe id="about-me" name="about-me" />
-        <Services id="services" name="services" />
-        <LatestWorks id="projects" />
-        <Experiences />
-        <Proposal />
-        <ContactMe id="contact" name="contact" />
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <Header />
+      <Hero id="/" />
+      <AboutMe id="about-me" name="about-me" />
+      <Services id="services" name="services" />
+      <LatestWorks id="projects" />
+      <Experiences />
+      <Proposal />
+      <ContactMe id="contact" name="contact" />
+      <Footer />
+    </div>
   );
 }
 
