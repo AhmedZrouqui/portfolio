@@ -10,19 +10,23 @@ import Proposal from "./components/Proposal";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 
+import { HashRouter, Route } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Hero id="/" />
-      <AboutMe id="about-me" name="about-me" />
-      <Services id="services" name="services" />
-      <LatestWorks id="projects" />
-      <Experiences />
-      <Proposal />
-      <ContactMe id="contact" name="contact" />
-      <Footer />
-    </div>
+    <HashRouter>
+      <div className="App">
+        <Header />
+        <Hero id="/" />
+        <AboutMe id="about-me" name="about-me" />
+        <Services id="services" name="services" />
+        <LatestWorks id="projects" />
+        <Experiences />
+        <Proposal />
+        <ContactMe id="contact" name="contact" />
+        <Footer />
+      </div>
+    </HashRouter>
   );
 }
 
