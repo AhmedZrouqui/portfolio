@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ahmed-zrouqui/static/css/main.cf4cd457.chunk.css",
+    "main.js": "/ahmed-zrouqui/static/js/main.a6aa6f85.chunk.js",
+    "main.js.map": "/ahmed-zrouqui/static/js/main.a6aa6f85.chunk.js.map",
+    "runtime-main.js": "/ahmed-zrouqui/static/js/runtime-main.f0bbbe54.js",
+    "runtime-main.js.map": "/ahmed-zrouqui/static/js/runtime-main.f0bbbe54.js.map",
+    "static/js/2.16464152.chunk.js": "/ahmed-zrouqui/static/js/2.16464152.chunk.js",
+    "static/js/2.16464152.chunk.js.map": "/ahmed-zrouqui/static/js/2.16464152.chunk.js.map",
+    "static/js/3.684eba4d.chunk.js": "/ahmed-zrouqui/static/js/3.684eba4d.chunk.js",
+    "static/js/3.684eba4d.chunk.js.map": "/ahmed-zrouqui/static/js/3.684eba4d.chunk.js.map",
+    "index.html": "/ahmed-zrouqui/index.html",
+    "static/css/main.cf4cd457.chunk.css.map": "/ahmed-zrouqui/static/css/main.cf4cd457.chunk.css.map",
+    "static/js/2.16464152.chunk.js.LICENSE.txt": "/ahmed-zrouqui/static/js/2.16464152.chunk.js.LICENSE.txt",
+    "static/media/ahmed_zrouqui.26aab9da.pdf": "/ahmed-zrouqui/static/media/ahmed_zrouqui.26aab9da.pdf",
+    "static/media/back-end.9decca57.jpg": "/ahmed-zrouqui/static/media/back-end.9decca57.jpg",
+    "static/media/front-end.1e666016.jpg": "/ahmed-zrouqui/static/media/front-end.1e666016.jpg",
+    "static/media/petcare-work.ad84d2a3.jpg": "/ahmed-zrouqui/static/media/petcare-work.ad84d2a3.jpg",
+    "static/media/portfolioImg.ae0ea3ce.png": "/ahmed-zrouqui/static/media/portfolioImg.ae0ea3ce.png",
+    "static/media/set-shop.0eac75f4.jpg": "/ahmed-zrouqui/static/media/set-shop.0eac75f4.jpg",
+    "static/media/web-dev.532290f0.jpg": "/ahmed-zrouqui/static/media/web-dev.532290f0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0bbbe54.js",
+    "static/js/2.16464152.chunk.js",
+    "static/css/main.cf4cd457.chunk.css",
+    "static/js/main.a6aa6f85.chunk.js"
+  ]
+}
