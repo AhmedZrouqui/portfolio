@@ -9,12 +9,12 @@
 
 *::-moz-selection {
   background: #a74224;
-  color: #fff;
+  color: #ffffff;
 }
 
 *::selection {
   background: #a74224;
-  color: #fff;
+  color: #ffffff;
 }
 
 .portfolio-header {
