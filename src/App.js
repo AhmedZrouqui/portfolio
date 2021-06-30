@@ -10,6 +10,8 @@ import Proposal from "./components/Proposal";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 
+import {HashRouter} from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
