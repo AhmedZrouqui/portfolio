@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://AhmedZrouqui.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh": "^2.8.9",
+    "pages": "0.0.16"
   }
 }
