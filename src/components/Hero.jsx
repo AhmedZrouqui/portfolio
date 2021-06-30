@@ -1,6 +1,6 @@
 import React from 'react';
 import porfotlioImg from '../styles/img/portfolioImg.png';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-scroll';
 
 function Hero() {
     return (
@@ -15,7 +15,13 @@ function Hero() {
                         Based in Morocco, I'm a freelance web developer.
                     </h3>
 
-                    <Link className="hire-me-button">
+                    <Link className="hire-me-button"
+                    to="contact"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={1000}>
                         Hire Me
                     </Link>
                 </div>

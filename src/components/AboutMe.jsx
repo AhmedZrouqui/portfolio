@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+import {Link} from 'react-scroll';
 import { customize } from '../customize/customize';
 import mycv from '../styles/my_cv/ahmed_zrouqui.pdf'
 
@@ -16,7 +16,13 @@ function AboutMe() {
                     <p>{customize.about_me.second}</p>
 
                     <div className="information-links">
-                        <Link className="view-works link">View works</Link>
+                        <Link className="view-works link"
+                        to="projects"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1000}>View works</Link>
                         <a href={mycv} className="download-cv link">Download CV</a>
                     </div>
                 </div>

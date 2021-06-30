@@ -65,6 +65,7 @@
           background: $main-color;
           color: white;
           transition: 0.5s all ease-in-out;
+          cursor: pointer;
 
           &:hover {
             background: transparent;

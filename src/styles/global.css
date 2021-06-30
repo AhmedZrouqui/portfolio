@@ -265,6 +265,7 @@
 .portfolio-hero > .wrapper > .hire-me-section .hire-me-button {
   padding: 20px 70px;
   font-size: 20px;
+  cursor: pointer;
   font-weight: 500;
   line-height: 60px;
   color: white;
@@ -475,6 +476,7 @@
   color: white;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
+  cursor: pointer;
 }
 
 .portfolio-aboutme .wrapper .information-section > .information-links .view-works:hover {
@@ -1123,6 +1125,7 @@
   color: #a74224;
   background: #fff;
   padding: 15px 60px;
+  cursor: pointer;
   border: 3px white solid;
   text-decoration: none;
   font-size: 20px;
