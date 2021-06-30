@@ -1,6 +1,23 @@
 import React from 'react'
+import { customize } from '../customize/customize'
 
 function Experiences() {
+
+    const displayExperiences = () => {
+        return customize.experiences.map((experience,index) => {
+            return (
+                <div className="experience" key={index}>
+                    <div className="content">
+                        <span className="time">{experience.time}</span>
+                        <h2 className="title">{experience.occupied_position}</h2>
+                        <span className="inc">{experience.company}</span>
+                        <p>{experience.information}</p>
+                    </div>
+                </div>
+            )
+        })
+    }
+
     return (
         <div className="portfolio-experiences">
             <div className="wrapper">
@@ -10,36 +27,14 @@ function Experiences() {
                         My Experiences
                     </h2>
 
-                    <p className="title-information">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur</p>
+                    <p className="title-information">{customize.experiences_description}</p>
 
                 </div>
 
                 <div className="experiences-section">
-                    <div className="experience">
-                        <div className="content">
-                            <span className="time">June 2016 - 2017</span>
-                            <h2 className="title">Web Developer</h2>
-                            <span className="inc">Top therm</span>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur</p>
-                        </div>
-                    </div>
-                    <div className="experience">
-                        <div className="content">
-                            <span className="time">Mars 2018 - 2019</span>
-                            <h2 className="title">SAP Developer</h2>
-                            <span className="inc">Seriacom</span>
-
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur</p>
-                        </div>
-                    </div>
-                    <div className="experience">
-                        <div className="content">
-                            <span className="time">January 2019 - 2021</span>
-                            <h2 className="title">UI/UX Developer</h2>
-                            <span className="inc">Fluides Services</span>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur</p>
-                        </div>
-                    </div>
+                    {
+                        displayExperiences()
+                    }
                 </div>
             </div>
         </div>

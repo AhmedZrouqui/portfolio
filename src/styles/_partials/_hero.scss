@@ -58,7 +58,8 @@
       img {
         position: absolute;
         height: 90%;
-        right: 0;
+        right: 50%;
+        transform: translateX(50%);
         bottom: 0;
         z-index: 1;
       }
@@ -71,8 +72,9 @@
         width: 600px;
         border-radius: 50%;
         position: absolute;
-        right: -40px;
-        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0px;
       }
     }
   }
@@ -105,10 +107,8 @@
         }
 
         &::after {
-          right: 50%;
           width: 500px;
           height: 500px;
-          transform: translateX(50%);
         }
       }
     }

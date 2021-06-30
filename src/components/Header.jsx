@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from "react-scroll";
 
 function Header() {
 
@@ -28,26 +28,51 @@ function Header() {
                 </div>
                 <div className={navOpen ? "nav-section nav-bar-activate" : "nav-section"} id="navSection">
                     <ul className="nav-list">
-                        <li className="nav-item">
-                            <Link to="" className="nav-link">
+                    <Link className="nav-link"
+                        to="home"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1000}>
                                 Home
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="" className="nav-link">
+                        </Link>
+                        <Link className="nav-link"
+                        to="about-me"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1000}>
                                 About me
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="" className="nav-link">
-                                My projects
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="" className="nav-link">
+                        </Link>
+                        <Link className="nav-link"
+                        to="services"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1000}>
+                                Services
+                        </Link>
+                        <Link className="nav-link"
+                        to="projects"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1000}>
+                                Projects
+                        </Link>
+                        <Link className="nav-link"
+                        to="contact"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={1000}>
                                 Contact me
-                            </Link>
-                        </li>
+                        </Link>
                     </ul>
 
                     <button className="ham-menu-button" onClick={() => setNavOpen(!navOpen)}>

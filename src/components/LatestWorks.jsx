@@ -3,14 +3,14 @@ import petcare from '../styles/img/petcare-work.jpg'
 
 function LatestWorks() {
     return (
-        <div className="portfolio-latestworks">
+        <div className="portfolio-latestworks" id="projects">
             <div className="wrapper">
                 <div className="title-section">
                     <h2 className="title">
                         Latest Projects
                     </h2>
 
-                    <p className="title-information">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur</p>
+                    <p className="title-information">You can find the latest works i've done, many other projects are coming soon!</p>
                 </div>
                 <div className="catalog-section">
                     <div className="petcare work" style={{backgroundImage: `url(${petcare})`}}>

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 function Hero() {
     return (
-        <div className="portfolio-hero">
+        <div className="portfolio-hero" id="home">
             <div className="wrapper">
                 <div className="hire-me-section">
                     <h1>

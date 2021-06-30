@@ -11,13 +11,13 @@ import Footer from '../Footer'
 function HomeComponent() {
     return (
         <div className="homeComponent">
-            <Hero />
-            <AboutMe />
-            <Services />
-            <LatestWorks />
+            <Hero id="#"/>
+            <AboutMe id="about-me"/>
+            <Services id="services"/>
+            <LatestWorks id="projects"/>
             <Experiences />
             <Proposal />
-            <ContactMe />
+            <ContactMe id="contact"/>
             <Footer />
         </div>
     )

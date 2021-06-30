@@ -1,12 +1,13 @@
 import React from 'react'
+import { customize } from '../customize/customize'
 
 function Footer() {
     return (
         <div className="portfolio-footer">
             <div className="wrapper">
                 <div className="big-logo-footer">
-                    <h1 className="logo">AZ.</h1>
-                    <p>Portfolio made with React, Pure HTML and CSS (sass)</p>
+                    <h1 className="logo">{customize.footer_information.name_logo}</h1>
+                    <p>{customize.footer_information.add_on}</p>
                 </div>
 
                 <div className="last-footer">

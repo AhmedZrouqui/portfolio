@@ -1,14 +1,18 @@
-@import './res';
+@import "./res";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: $poppins;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $poppins;
+
+  &::selection {
+    background: $main-color;
+    color: #fff;
+  }
 }
 
-.App{
-    
+.App {
 }
 
-@import './_partials/exportPartials'
+@import "./_partials/exportPartials";
