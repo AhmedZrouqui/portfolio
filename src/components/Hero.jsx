@@ -8,11 +8,11 @@ function Hero() {
             <div className="wrapper">
                 <div className="hire-me-section">
                     <h1>
-                        I'm Ahmed
+                        I'm Ahmed,
                     </h1>
 
-                    <h3>
-                        Freelance Web Developer
+                    <h3 className="presentation">
+                        Based in Morocco, I'm a freelance web developer.
                     </h3>
 
                     <Link className="hire-me-button">

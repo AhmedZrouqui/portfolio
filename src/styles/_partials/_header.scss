@@ -140,3 +140,11 @@
     }
   }
 }
+
+@include respond-to(medium) {
+  .portfolio-header {
+    & > .wrapper {
+      width: 90%;
+    }
+  }
+}

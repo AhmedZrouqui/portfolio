@@ -183,6 +183,12 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .portfolio-header > .wrapper {
+    width: 90%;
+  }
+}
+
 .portfolio-hero {
   width: 100vw;
   height: 730px;
@@ -225,6 +231,7 @@
   font-weight: 400;
   margin-bottom: 40px;
   color: #333;
+  max-width: 70%;
 }
 
 .portfolio-hero > .wrapper > .hire-me-section .hire-me-button {
@@ -313,10 +320,32 @@
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio-hero .wrapper .img-section::after {
-    width: 400px;
-    height: 400px;
-    bottom: -40px;
+  .portfolio-hero .wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio-hero .wrapper > .hire-me-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolio-hero .wrapper > .hire-me-section h3 {
+    max-width: 100%;
+  }
+  .portfolio-hero .wrapper > .hire-me-section .hire-me-button {
+    max-width: 75vw;
+    margin: 0 auto;
+  }
+  .portfolio-hero .wrapper .img-section {
+    display: none;
   }
 }
 
@@ -915,16 +944,16 @@
   display: grid;
   width: 100%;
   margin: 0 auto;
-  -ms-grid-columns: (minmax(384px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+  -ms-grid-columns: (minmax(370px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
 }
 
 .portfolio-experiences .wrapper .experiences-section .experience {
   cursor: pointer;
   background: transparent;
   border: 1px #e7e7e7 solid;
-  -webkit-transition: .4s all ease-in-out;
-  transition: .4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
   min-height: 350px;
   padding: 25px;
   border-left: none;
@@ -966,12 +995,33 @@
 
 .portfolio-experiences .wrapper .experiences-section .experience:hover {
   background: rgba(2, 187, 115, 0.6);
-  -webkit-transition: .4s all ease-in-out;
-  transition: .4s all ease-in-out;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
 }
 
-.portfolio-experiences .wrapper .experiences-section .experience:hover span, .portfolio-experiences .wrapper .experiences-section .experience:hover p {
+.portfolio-experiences .wrapper .experiences-section .experience:hover span,
+.portfolio-experiences .wrapper .experiences-section .experience:hover p {
   color: #333;
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio-experiences .wrapper .experiences-section > .experience {
+    border-left: 1px #e7e7e7 solid;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-experiences {
+    width: 100vw;
+  }
+  .portfolio-experiences .wrapper {
+    width: 90vw;
+    padding: 60px 0;
+    margin: 0;
+  }
+  .portfolio-experiences .wrapper .experiences-section > .experiences {
+    border-left: 1px #e7e7e7 solid;
+  }
 }
 
 .portfolio-proposal {
@@ -1047,15 +1097,320 @@
   border: 3px white solid;
   text-decoration: none;
   font-size: 20px;
+  font-weight: 500;
   border-radius: 5px;
-  -webkit-transition: .5s all ease-in-out;
-  transition: .5s all ease-in-out;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 
 .portfolio-proposal .wrapper .hire-me .hire-me-button:hover {
   color: #fff;
   background: transparent;
-  -webkit-transition: .5s all ease-in-out;
-  transition: .5s all ease-in-out;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.portfolio-contactme {
+  width: 100vw;
+  background: #fbfbfb;
+}
+
+.portfolio-contactme .wrapper {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 90px 0;
+  max-width: calc(1920px * 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio-contactme .wrapper .title-section {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 45px;
+}
+
+.portfolio-contactme .wrapper .title-section h2 {
+  font-size: 45px;
+  display: inline-block;
+  color: #333;
+  z-index: 999;
+  position: relative;
+  line-height: 52px;
+}
+
+.portfolio-contactme .wrapper .title-section h2::after {
+  content: "";
+  width: 60%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #02bb73;
+}
+
+.portfolio-contactme .wrapper .contact-me-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 45px;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info h3 {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info .info {
+  padding: 6px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info .info .icon {
+  font-size: 23px;
+  margin-right: 15px;
+  color: #ababab;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info .info .info-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info .follow-me {
+  margin-top: 35px;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info .follow-me h4 {
+  font-weight: 500;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info .follow-me-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info .follow-me-list li {
+  padding: 15px;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info .follow-me-list li .follow-me-link {
+  font-size: 23px;
+  color: #ababab;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-info .follow-me-list li .follow-me-link:hover {
+  color: #333;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .form-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .form-div label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .form-div input,
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .form-div textarea {
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  -webkit-box-shadow: 1px 1px 8px rgba(51, 51, 51, 0.3);
+          box-shadow: 1px 1px 8px rgba(51, 51, 51, 0.3);
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .form-div textarea {
+  min-height: 200px;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .two-form-divs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .two-form-divs .form-div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .two-form-divs .form-div:first-child {
+  margin-right: 15px;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .form-div {
+  margin-bottom: 15px;
+}
+
+.portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .form-div .send-message-button {
+  max-width: 300px;
+  padding: 15px 70px;
+  border: none;
+  background: #02bb73;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio-contactme {
+    width: 100vw;
+  }
+  .portfolio-contactme .wrapper {
+    width: 90vw;
+  }
+  .portfolio-contactme .wrapper .contact-me-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio-contactme .wrapper .contact-me-section .contact-info {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 45px;
+  }
+  .portfolio-contactme .wrapper .contact-me-section .contact-info h3 {
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .portfolio-contactme .wrapper .contact-me-section .contact-info .follow-me h4 {
+    text-align: center;
+  }
+  .portfolio-contactme .wrapper .contact-me-section .contact-me {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form {
+    width: 90vw;
+  }
+  .portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .two-form-divs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio-contactme .wrapper .contact-me-section .contact-me .contact-me-form .two-form-divs .form-div:first-child {
+    margin-right: 0;
+  }
+}
+
+.portfolio-footer {
+  width: 100vw;
+  background: #fbfbfb;
+}
+
+.portfolio-footer .wrapper {
+  width: 60%;
+  margin: 0 auto;
+  padding: 90px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio-footer .wrapper .big-logo-footer {
+  text-align: center;
+  height: 350px;
+}
+
+.portfolio-footer .wrapper .big-logo-footer .logo {
+  font-size: 70px;
+  color: #02bb73;
+}
+
+.portfolio-footer .wrapper .big-logo-footer p {
+  font-weight: 500;
+  color: #333;
+}
+
+.portfolio-footer .wrapper .last-footer {
+  padding: 25px;
+  width: 100vw;
+  text-align: center;
+  background: #ebebeb;
+  font-weight: 500;
+  color: #333;
+}
+
+.portfolio-footer .wrapper .last-footer span span {
+  color: #02bb73;
+  font-weight: 600;
 }
 /*# sourceMappingURL=global.css.map */

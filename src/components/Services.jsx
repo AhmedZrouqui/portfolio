@@ -15,7 +15,7 @@ function Services() {
                         Services
                     </h2>
 
-                    <p className="title-information">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur</p>
+                    <p className="title-information">I propose multiple services, web dev, shop dev(prestashop), front-end development and back-end, do not hesitate to message me to know more.</p>
                 </div>
 
 
@@ -25,7 +25,7 @@ function Services() {
                         <div className="content">
                             <AiIcons.AiOutlineCodepen className="icon" />
                             <h2 className="title">Web Dev.</h2>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                            <p>Web Development is my main area, for i'm more comfortable doing that.</p>
                         </div>
                         </div>
 
@@ -36,7 +36,7 @@ function Services() {
                         <div className="content">
                             <AiIcons.AiOutlineLineChart className="icon" />
                             <h2 className="title">Shop Dev.</h2>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                            <p>I can create shop websites using Prestashop(install theme, customize theme, and manage modules/layouts) in a short time (i'm open for new technologies).</p>
                         </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ function Services() {
                         <div className="content">
                             <AiIcons.AiOutlineLayout className="icon" />
                             <h2 className="title">Front-end Dev.</h2>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                            <p>My front-end skills are pretty good, i can do whatever my clients request.</p>
                         </div>
                         </div>
 
@@ -55,7 +55,7 @@ function Services() {
                             <div className="content">
                                 <AiIcons.AiOutlineConsoleSql className="icon" />
                                 <h2 className="title">Back-end Dev.</h2>
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                                <p>I work with the recent technologies (Mongo, Django, GraphQl and more), i'm open for new technologies.</p>
                             </div>
                         </div>
 

@@ -1,61 +1,62 @@
 .portfolio-proposal {
-    width: 100vw;
-    background: $main-color;
-  
-    .wrapper {
-      width: 60%;
-      margin: 0 auto;
-      padding: 90px 0;
-  
-      max-width: calc(1920px * 0.6);
-  
-      @include flex-props(align_vh);
-      flex-direction: column;
-  
-      .title-section {
-        @include flex-props(align_v);
-        flex-direction: column;
-        .title {
-          font-size: 45px;
-          display: inline-block;
-          color: #fff;
-          z-index: 999;
-          position: relative;
-          line-height: 52px;
-          margin-bottom: 45px;
-          text-align: center;
-  
-          &::after {
-            content: "";
-            width: 60%;
-            height: 4px;
-            position: absolute;
-            bottom: 0;
-            bottom: -40px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #fff;
-          }
-        }
-    }
-    .hire-me{
-        margin-top: 50px;
-        .hire-me-button{
-            color: $main-color;
-            background: #fff;
-            padding: 15px 60px;
-            border: 3px white solid;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 5px;
-            transition: .5s all ease-in-out;
+  width: 100vw;
+  background: $main-color;
 
-            &:hover{
-                color: #fff;
-                background: transparent;
-                transition: .5s all ease-in-out;
-            }
+  .wrapper {
+    width: 60%;
+    margin: 0 auto;
+    padding: 90px 0;
+
+    max-width: calc(1920px * 0.6);
+
+    @include flex-props(align_vh);
+    flex-direction: column;
+
+    .title-section {
+      @include flex-props(align_v);
+      flex-direction: column;
+      .title {
+        font-size: 45px;
+        display: inline-block;
+        color: #fff;
+        z-index: 999;
+        position: relative;
+        line-height: 52px;
+        margin-bottom: 45px;
+        text-align: center;
+
+        &::after {
+          content: "";
+          width: 60%;
+          height: 4px;
+          position: absolute;
+          bottom: 0;
+          bottom: -40px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #fff;
         }
+      }
     }
-}
+    .hire-me {
+      margin-top: 50px;
+      .hire-me-button {
+        color: $main-color;
+        background: #fff;
+        padding: 15px 60px;
+        border: 3px white solid;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: 0.5s all ease-in-out;
+
+        &:hover {
+          color: #fff;
+          background: transparent;
+          transition: 0.5s all ease-in-out;
+        }
+      }
+    }
+  }
 }

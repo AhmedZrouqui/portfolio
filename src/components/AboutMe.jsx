@@ -10,8 +10,8 @@ function AboutMe() {
                 </div>
 
                 <div className="information-section">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nu pariatur excepteur sint occaecat.</p>
+                    <p>Ahmed Zrouqui, i'm a web developer(Front and Back-end) based in Morocco.</p>
+                    <p>I'm best known for my passion towards writing raw code, wether on front-end(HTML, CSS) or on back-end(i have no choice tho). What makes me a perfectionist web developer... tho i rarely use plugins or pre-made libraries (except for the big well known ones). </p>
 
                     <div className="information-links">
                         <Link className="view-works link">View works</Link>

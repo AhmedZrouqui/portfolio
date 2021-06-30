@@ -1,0 +1,43 @@
+.portfolio-footer {
+  width: 100vw;
+  background: $gray-white;
+  .wrapper {
+    width: 60%;
+    margin: 0 auto;
+
+    padding: 90px 0 0 0;
+
+    @include flex-props(align_v);
+    flex-direction: column;
+
+    .big-logo-footer {
+      text-align: center;
+      height: 350px;
+
+      .logo {
+        font-size: 70px;
+        color: $main-color;
+      }
+
+      p {
+        font-weight: 500;
+        color: #333;
+      }
+    }
+
+    .last-footer {
+      padding: 25px;
+      width: 100vw;
+      text-align: center;
+      background: #ebebeb;
+      font-weight: 500;
+      color: #333;
+      span {
+        span {
+          color: $main-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
