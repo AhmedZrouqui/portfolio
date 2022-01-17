@@ -1,5 +1,5 @@
 import React from 'react';
-import porfotlioImg from '../styles/img/portfolioImg.png';
+//import porfotlioImg from '../styles/img/portfolioImg.png';
 import {Link} from 'react-scroll';
 
 function Hero() {
@@ -27,7 +27,7 @@ function Hero() {
                 </div>
 
                 <div className="img-section">
-                    <img src={porfotlioImg} alt="my-img"></img>
+                    <!--<img src={porfotlioImg} alt="my-img"></img>-->
                 </div>
             </div>
         </div>
