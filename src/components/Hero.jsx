@@ -27,7 +27,6 @@ function Hero() {
                 </div>
 
                 <div className="img-section">
-                    <!--<img src={porfotlioImg} alt="my-img"></img>-->
                 </div>
             </div>
         </div>
